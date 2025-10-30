@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Modello 3D VR</title>
+  <!-- Libreria Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000; /* Sfondo nero per VR */
+    }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer src="Prova_VR.glb"
+                alt="Modello 3D"
+                auto-rotate
+                camera-controls
+                ar
+                vr>
+  </model-viewer>
+</body>
+</html>
